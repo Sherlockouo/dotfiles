@@ -1,0 +1,34 @@
+# This is Git's per-user configuration file.
+[user]
+	name = SherlockOuO
+	email = wdf.coder@gmail.com
+[core]
+	autocrlf = false
+	whitespace = blank-at-eol,blank-at-eof,space-before-tab
+  quotepath = false
+	pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+  tool = kitty
+  guitool = kitty.gui
+[difftool]
+  prompt = false
+  trustExitCode = true
+[difftool "kitty"]
+  cmd = kitty +kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+  cmd = kitty kitty +kitten diff $LOCAL $REMOTE
+
+[pull]
+	rebase = true
+[push]
+  autoSetupRemote = true
+[rebase]
+	autoStash = true

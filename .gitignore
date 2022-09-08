@@ -1,0 +1,16 @@
+!kitty 
+!nvim 
+
+# include files 
+!.gitconfig
+
+# ignore directories
+gcloud 
+github-copilot
+iterm2 
+pgcli
+!pgcli/config
+pip 
+raycast
+
+local.zsh
