@@ -149,9 +149,6 @@ source <(fzf --zsh)
 
 # Custom export
 export KUBECONFIG=~/.kube/config:~/.kube/test-config
-# Path to your oh-my-zsh installation.
-export https_proxy="http://127.0.0.1:7890"
-export http_proxy="http://127.0.0.1:7890"
 
 
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
@@ -159,5 +156,5 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 
 eval "$(starship init zsh)"
 
-source ./local.zsh
+source ~/local.zsh
 
