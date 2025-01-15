@@ -85,12 +85,8 @@ alias k="kubectl"
 alias gc="git clone"
 alias pi="pip install"
 alias ca="conda activate"
-
-
-# config 
-
-
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+alias ni="npm install"
+alias yz="yazi"
 
 # config for node version manager
  export NVM_DIR="$HOME/.nvm"

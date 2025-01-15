@@ -137,4 +137,19 @@ return {
   { "rebelot/kanagawa.nvim", name = "kanagawa" },
   { "savq/melange-nvim", name = "melange" },
   { "atmosuwiryo/vim-winteriscoming", name = "winteriscoming" },
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000, -- Make sure to load this before all the other start plugins.
+    name = "kanagawa",
+    opts = {
+      -- transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      background = { -- map the value of 'background' option to a theme
+        dark = "wave", -- try "dragon" !
+        light = "lotus",
+      },
+    },
+  },
 }

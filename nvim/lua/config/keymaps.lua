@@ -134,13 +134,6 @@ if vim.fn.executable("lazygit") == 1 then
   map("n", "<leader>gL", function() Snacks.lazygit.log() end, { desc = "Lazygit Log (cwd)" })
 end
 
-map("n", "<leader>gb", function() Snacks.git.blame_line() end, { desc = "Git Blame Line" })
-map({ "n", "x" }, "<leader>gB", function() Snacks.gitbrowse() end, { desc = "Git Browse (open)" })
-map({"n", "x" }, "<leader>gY", function()
-  Snacks.gitbrowse({ open = function(url) vim.fn.setreg("+", url) end })
-end, { desc = "Git Browse (copy)" })
-
-
 -- lazygit
 map("n","<leader>gt","<cmd>BlameToggle<CR>", {desc = "Lazygit (cwd)"})
 
@@ -184,7 +177,6 @@ map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
 -- map esc to ctrl c 
 map("i", "<C-c>", "<Esc>", { desc = "Map escape to ctrl c" })
 
-map({"n","x"}, "gp", "\"_dP", {desc = "Paste without overwriting buffer"})
 
 -- map ai code completion
 map({"i","n"},"<a-j>",function()
