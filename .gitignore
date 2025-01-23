@@ -14,3 +14,5 @@ pip
 raycast
 
 local.zsh
+
+*local.yaml
