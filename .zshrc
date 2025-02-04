@@ -154,3 +154,6 @@ eval "$(starship init zsh)"
 
 source ~/local.zsh
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/wudingfeng/.lmstudio/bin"

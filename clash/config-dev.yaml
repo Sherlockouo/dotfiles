@@ -5,11 +5,6 @@ external-controller: :9090
 mode: rule
 
 proxies:
-  - name: 🇨🇳 MoonShotAI
-    server: 192.168.64.2
-    port: 1080
-    type: socks5
-
   - type: ss
     name: hk-01
     server: "iibrb-g05.hk01-ae5.entry.v50307shvkaa.art"
@@ -40,14 +35,9 @@ proxies:
     udp: true # 可选，是否启用 UDP 转发
 
 rules:
-  - IP-CIDR,172.24.0.0/16,🇨🇳 MoonShotAI,no-resolve
-  - IP-CIDR,172.26.0.0/16,🇨🇳 MoonShotAI,no-resolve
-  - IP-CIDR,172.28.0.0/16,🇨🇳 MoonShotAI,no-resolve
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,msh,🇨🇳 MoonShotAI
-  - RULE-SET,mshcidr,🇨🇳 MoonShotAI,no-resolve
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,tld-not-cn,PROXY
@@ -71,11 +61,6 @@ proxy-groups:
       - "hk-04"
       - "us-01"
       - "DIRECT"
-      - "🇨🇳 MoonShotAI"
-  - name: "MoonShotAI"
-    type: select
-    proxies:
-      - "🇨🇳 MoonShotAI"
 
 rule-providers:
   reject:
