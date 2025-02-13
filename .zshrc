@@ -1,4 +1,4 @@
-export CC=gcc-14
+# export CC=gcc-14
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.docker/bin
