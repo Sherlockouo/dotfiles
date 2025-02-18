@@ -1,7 +1,7 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
-    inlay_hints = { enable = false },
+    inlay_hints = { enable = false},
     servers = {
       -- Ensure mason installs the server
       clangd = {

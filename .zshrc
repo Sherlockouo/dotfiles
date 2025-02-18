@@ -140,6 +140,19 @@ rfv() (
       --query "$*"
 )
 
+# 通用 conda 环境创建/激活
+ce() {
+    local env_name=${1:-base}  # 默认环境名
+    local py_version=${2:-3.10}       # 默认 Python 版本
+
+    if conda env list | grep -qw "$env_name"; then
+        conda activate "$env_name"
+    else
+        conda create -y -n "$env_name" python="$py_version"
+        conda activate "$env_name"
+    fi
+}
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 

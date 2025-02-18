@@ -3,6 +3,7 @@ return {
   event = "VeryLazy",
   priority = 1000,
   opts = {
+    image = {},
     dashboard = {
       enabled = true,
       preset = {
