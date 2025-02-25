@@ -3,6 +3,10 @@ return {
   event = "VeryLazy",
   priority = 1000,
   opts = {
+    picker = {
+      hidden = true, -- for hidden files
+      ignored = true,
+    },
     image = {},
     dashboard = {
       enabled = true,
