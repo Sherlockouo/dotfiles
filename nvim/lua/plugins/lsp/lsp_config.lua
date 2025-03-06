@@ -1,8 +1,23 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
-    inlay_hints = { enable = false},
+    inlay_hints = { enable = false },
     servers = {
+      ruff_lsp = {
+        mason = false,
+        enabled = false,
+      },
+      pylsp = {
+        settings = {
+          pylsp = {
+            plugins = {
+              rope_autoimport = {
+                enabled = true,
+              },
+            },
+          },
+        },
+      },
       -- Ensure mason installs the server
       clangd = {
         keys = {

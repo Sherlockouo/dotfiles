@@ -163,3 +163,6 @@ end
 
 -- git blame
 vim.g.gitblame_message_template = "<summary> • <date> • <author> • <sha>"
+
+-- lsp for python
+vim.g.lazyvim_python_lsp = "pyright"

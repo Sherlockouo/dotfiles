@@ -6,13 +6,10 @@ return {
         "lua-language-server",
         "stylua",
         "luacheck",
-
         -- web dev stuff
         "css-lsp",
         "html-lsp",
-
         "tailwindcss-language-server",
-
         "svelte-language-server",
         "emmet-ls",
         "rustywind",
